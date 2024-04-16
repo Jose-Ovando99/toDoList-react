@@ -1,15 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import freeCodeCampLogo from './assets/freecodecamp-logo.png'
+import Tarea from './components/Tarea';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      
-    </>
+    <div className='aplicacion-tareas'>
+      <div className='freecodecamp-logo-container'>
+        <img 
+        src={freeCodeCampLogo}
+        className='freecodecamp-logo' />
+      </div>
+      <div className='tareas-lista-principal'>
+        <h1>Mis tareas</h1>
+        <Tarea texto='Aprender React' />
+      </div>
+    </div>
   )
 }
 
